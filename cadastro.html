@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Patas & Lar | Cadastro</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+         <img src="img/logo.png" alt="Logo da ONG Patas & Lar" width="60">
+        <h1>Patas & Lar</h1>
+        <h2>Todo focinho merece um lar.</h2>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <h2>Cadastro</h2>
+        <p>Preencha o formulário abaixo de acordo com seu interesse: fazer uma doação ou adotar um pet.</p>
+
+        <form>
+            <fieldset>
+                <legend>Formulário de Doador</legend>
+                <div class="alert alert-info">
+                <strong>Atenção:</strong> preencha todos os campos obrigatórios corretamente. CPF, telefone e CEP possuem formato específico de validação.
+                </div>
+                <label for="nome-doador">Nome Completo</label>
+                <input type="text" id="nome-doador" name="nome-doador" placeholder="Seu Nome" required>
+                <label for="nascimento-doador">Data de Nascimento</label>
+                <input type="date" id="nascimento-doador" name="nascimento-doador" required>
+                <label for="cep-doador">CEP: </label>
+                <input type="text" id="cep-doador" name="cep-doador" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required>
+                <label for="endereco-doador">Endereço</label>
+                <input type="text" id="endereco-doador" name="endereco-doador" placeholder="Rua e número" required>
+                <label for="cidade-doador">Cidade</label>
+                <input type="text" id="cidade-doador" name="cidade-doador" required>
+                <label for="estado-doador">Estado</label>
+                <select id="estado-doador" name="estado-doador" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </select>
+                <label for="email-doador">E-mail</label>
+                <input type="email" id="email-doador" name="email-doador" placeholder="exemplo@email.com" required>
+                <label for="telefone-doador">Telefone</label>
+                <input type="tel" id="telefone-doador" name="telefone-doador" 
+                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="00-00000-0000">
+                <label for="cpf-doador">CPF</label>
+                <input type="text" id="cpf-doador" name="cpf-doador"
+                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00" required>
+                <label for="tipo-doacao">Tipo de Doação</label>
+                <select id="tipo-doacao" name="tipo-doacao" required>
+                    <option value="">Selecione o Tipo de Doação</option>
+                    <option value="unica">Doação Única</option>
+                    <option value="mensal">Doação mensal (Padrinho/Madrinha)</option>
+                    <option value="itens">Doação de Itens</option>
+                </select> 
+                <label for="mensagem-doador">Mensagem (Opcional)</label>
+                <textarea id="mensagem-doador" name="mensagem-doador" placeholder="Escreva Aqui"></textarea>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Formulário de Interesse em Adoção</legend>
+                <div class="alert alert-info">
+                <strong>Atenção:</strong> preencha todos os campos obrigatórios corretamente. CPF, telefone e CEP possuem formato específico de validação.
+                </div>
+                <label for="nome-adotante">Nome Completo</label>
+                <input type="text" id="nome-adotante" name="nome-adotante" placeholder="Seu Nome" required>
+                <label for="nascimento-adotante">Data de Nascimento</label>
+                <input type="date" id="nascimento-adotante" name="nascimento-adotante" required>
+                <label for="email-adotante">E-mail</label>
+                <input type="email" id="email-adotante" name="email-adotante" placeholder="exemplo@email.com" required>
+                <label for="telefone-adotante">Telefone</label>
+                <input type="tel" id="telefone-adotante" name="telefone-adotante"
+                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="00-00000-0000">
+                <label for="cep-adotante">CEP: </label>
+                <input type="text" id="cep-adotante" name="cep-adotante"
+                pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required>
+                  <label for="endereco-adotante">Endereço</label>
+                <input type="text" id="endereco-adotante" name="endereco-adotante" placeholder="Rua e número" required>
+                <label for="cidade-adotante">Cidade</label>
+                <input type="text" id="cidade-adotante" name="cidade-adotante" required>
+                <label for="estado-adotante">Estado</label>
+                <select id="estado-adotante" name="estado-adotante" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </select>
+                <label for="pet-interesse">Pet de Interesse</label>
+                <select id="pet-interesse" name="pet-interesse">
+                    <option value="" >Selecione o Pet de Interesse</option>
+                    <option value="bento">Bento</option>
+                    <option value="mel">Mel</option>
+                    <option value="thor">Thor</option>
+                </select>
+
+                <label for="mensagem-adotante">Conte um pouco sobre sua rotina e ambiente em casa: </label>
+                <textarea id="mensagem-adotante" name="mensagem-adotante" placeholder="Escreva aqui" required></textarea>
+                <button type="submit">Enviar</button>
+             </fieldset>
+        </form>
+    </section>
+</main>
+ <hr>
+    <footer>
+        <address>
+            <ul>
+                <li>Endereço: Rua das Acácias, 245 — Vila Esperança, São Paulo/SP</li>
+                <li>Telefone: (11) 4002-8922</li>
+                <li>E-mail: contato@patasnolar.org.br</li>
+                <li>Redes sociais: @patasnolar</li>
+            </ul>
+            <p>&copy; 2026 Patas & Lar. Todos os direitos reservados.</p>
+        </address>
+    </footer>
+    <input type="checkbox" id="toast-toggle" class="modal-toggle">
+    <label for="toast-toggle" class="btn-link">Teste de Envio de Formulário</label>
+
+        <div class="toast">
+            ✓ Cadastro enviado com sucesso!
+        </div>
+</body>
+</html>
