@@ -4,7 +4,7 @@ Site institucional fictício de uma ONG de resgate e adoção de animais,
 desenvolvido como projeto acadêmico da disciplina de Desenvolvimento 
 Front-End (curso de ADS).
 
-🔗 **[Ver site publicado]([https://seu-usuario.github.io/nome-do-repositorio/](https://camillatuzia.github.io/patas-e-lar-atv-academica/)**
+🔗 **[Ver site publicado]((https://camillatuzia.github.io/patas-e-lar-atv-academica/)**
 
 ## Sobre o projeto
 
