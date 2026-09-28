@@ -285,6 +285,24 @@ textarea:not(:placeholder-shown):invalid {
     border-color: #B23A3A;
 }
 
+input:not(:placeholder-shown):valid,
+textarea:not(:placeholder-shown):valid {
+    border-color: #4A7A4A;
+}
+
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+    border-color: #B23A3A;
+}
+
+.mensagem-erro {
+    display: block;
+    margin-top: 0.35rem;
+    color: #B23A3A;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 .badge {
     display: inline-block;
     font-size: var(--font-size-1);
@@ -372,3 +390,4 @@ textarea:not(:placeholder-shown):invalid {
 #toast-toggle:checked ~ .toast {
     display: block;
 }
+
